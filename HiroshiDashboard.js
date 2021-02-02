@@ -20,6 +20,7 @@ module.exports.load = async (client) => {
             botname: client.config.bot.botname,
             botdescription: client.config.bot.botdescription,
             creatorname: client.config.bot.creatorname,
+            creatorid: client.config.bot.creatorid,
             creatoravatarlink: client.config.bot.creatoravatarlink,
             supportserverinvite: client.config.bot.supportserverinvite,
             botinvitelink: client.config.bot.botinvitelink,
