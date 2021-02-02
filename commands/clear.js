@@ -21,9 +21,9 @@ const Base = require("../base/Command");
       let embed = new Discord.MessageEmbed()
         .setColor("BLACK")
         .setAuthor(message.client.config.bot.botname, message.client.user.displayAvatarURL())
-        .addField("<:rikka_no:777511967362646037> | `"+prefix+"clear`", '**Limpa mensagens de um canal.**')
-        .addField('<:rikka_yes:777512082669174814> | Como utilizar?', "`"+prefix+"clear` `<Quantidade de mensagens>`")
-        .addField('<:rikka_warn:777512813068419134> | Permissão?', '**`Gerenciar Mensagens`**', true)
+        .addField("`"+prefix+"clear`", '**Limpa mensagens de um canal.**')
+        .addField('Como utilizar?', "`"+prefix+"clear` `<Quantidade de mensagens>`")
+        .addField('Permissão?', '**`Gerenciar Mensagens`**', true)
         .setFooter("Comando requesitado por "+message.author.username+"",  message.author.displayAvatarURL({ dynamic: true })) 
   
       if(!message.member.hasPermission("MANAGE_MESSAGES")) {
