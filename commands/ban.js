@@ -21,9 +21,9 @@ const Base = require("../base/Command");
       let embed = new Discord.MessageEmbed()
         .setColor("BLACK")
         .setAuthor(message.client.config.bot.botname, message.client.user.displayAvatarURL())
-        .addField("<:rikka_no:777511967362646037> | `"+prefix+"ban`", '**Utilize para banir um membro.**')
-        .addField('<:rikka_yes:777512082669174814> | Como utilizar?', "`"+prefix+"ban` `<Membro>` `<Razão>`")
-        .addField('<:rikka_warn:777512813068419134> | Permissão?', '**`Banir Membros`**', true)
+        .addField("`"+prefix+"ban`", '**Utilize para banir um membro.**')
+        .addField('Como utilizar?', "`"+prefix+"ban` `<Membro>` `<Razão>`")
+        .addField('Permissão?', '**`Banir Membros`**', true)
         .setFooter("Comando requesitado por "+message.author.username+"",  message.author.displayAvatarURL({ dynamic: true })) 
   
   
@@ -41,7 +41,7 @@ const Base = require("../base/Command");
         return message.channel.send(embed)
       }
       if(!user.id === message.author.id){
-        return message.channel.send("**<:rikka_no:777511967362646037> | Você não pode se banir!**");
+        return message.channel.send("**Você não pode se banir!**");
       }  
     
       const member = message.guild.members.fetch(user.id).catch(() => {});
@@ -51,7 +51,7 @@ const Base = require("../base/Command");
         const moderationPosition = message.member.roles.highest.position;
     
   	    if(!message.member.ownerID !== message.author.id && !(moderationPosition > memberPosition)) {
-	        return message.channel.send("**<:rikka_no:777511967362646037> | Você não pode banir o dono ou alguém maior que sua hierarquia!**")
+	        return message.channel.send("**Você não pode banir o dono ou alguém maior que sua hierarquia!**")
 		    }
 		  }
   
@@ -62,9 +62,9 @@ const Base = require("../base/Command");
       };
   
       var banembed = new Discord.MessageEmbed()
-        .setDescription(`**<a:rikka_blobcatban:777579991969693696>・${user} foi Banido!**`)
+        .setDescription(`**${user} foi Banido!**`)
         .setColor("RANDOM")
-        .addField(`**<:lovekanji:776966204815704116>・Razão**`, `**Razão: ${reason}**`,true)
+        .addField(`**Razão**`, `**Razão: ${reason}**`,true)
         .addField(`**🔨・Staff**`, `**${message.author}**`, true)
         .setThumbnail(user.user.displayAvatarURL())
         .setImage("https://cdn.discordapp.com/attachments/743826730514514030/803258576117170176/3_Sem_Titulo_20210125104224.png")
@@ -81,7 +81,7 @@ const Base = require("../base/Command");
             message.guild.channels.cache.get(canal).send(banembed)
         })
       }).catch(err => {
-        message.channel.send(`<:rikka_no:777511967362646037>・Não consegui banir ${user}`)
+        message.channel.send(`Não consegui banir ${user}`)
       })
     })
   }
