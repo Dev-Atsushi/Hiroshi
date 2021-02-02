@@ -29,7 +29,7 @@ const Base = require("../base/Command");
 			}    
                 
       let saida = new Discord.MessageEmbed()    
-       .setTitle(`<a:rikka_config:777876040012791849> | Saida`)
+       .setTitle(`Saida`)
        .setDescription(`\`\`\`${output}\`\`\``)
       
       message.channel.send(saida)
@@ -43,7 +43,7 @@ const Base = require("../base/Command");
       console.log(err)
         
       let errorrr = new Discord.MessageEmbed()           
-       .setTitle(`<:rikka_warn:777512813068419134> | Erro Detectado`)
+       .setTitle(`Erro Detectado`)
        .setDescription(`\`\`\`${err}\`\`\``)
               
       message.channel.send(errorrr)
