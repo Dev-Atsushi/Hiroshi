@@ -21,9 +21,9 @@ const Base = require("../base/Command");
        let erro = new Discord.MessageEmbed()
          .setColor("BLACK")
          .setAuthor(message.client.config.bot.botname, message.client.user.displayAvatarURL())
-         .addField("<:rikka_no:777511967362646037> | `"+prefix+"addemoji`", '**Adicione um emoji.**')
-         .addField('<:rikka_yes:777512082669174814> | Como utilizar?', "`"+prefix+"addemoji` `<Nome do emoji>` `<Link do emoji>`")
-         .addField('<:rikka_warn:777512813068419134> | Permissão?', '**`Gerenciar Canal`**', true)
+         .addField("`"+prefix+"addemoji`", '**Adicione um emoji.**')
+         .addField('Como utilizar?', "`"+prefix+"addemoji` `<Nome do emoji>` `<Link do emoji>`")
+         .addField('Permissão?', '**`Gerenciar Canal`**', true)
          .setFooter("Comando requesitado por "+message.author.username+"",  message.author.displayAvatarURL({ dynamic: true }));
 
        if(!message.member.hasPermission("MANAGE_EMOJIS")) {
@@ -63,12 +63,12 @@ const Base = require("../base/Command");
        }).catch((err) => {
          console.log(err)
          if(err.code === 30008) {
-           return message.channel.send("**<:rikka_no:777511967362646037>・O máximo de emojis deste server foi atingido.**")
+           return message.channel.send("**O máximo de emojis deste server foi atingido.**")
          }
          if(err.code === 50035) {
-           return message.channel.send("**<:rikka_no:777511967362646037>・Este emoji é muito grande.**")
+           return message.channel.send("**Este emoji é muito grande.**")
          }
-         return message.channel.send("**<:rikka_no:777511967362646037>・URL ou nome é inválido.**")
+         return message.channel.send("**URL ou nome é inválido.**")
          });
     });
   };
