@@ -5,6 +5,15 @@ module.exports = {
   clientid: "XXXXXXXX", // Id do seu bot
   url: "XX", // Url do seu site sem os https://.
   
+  api: {
+    dbl: "XXXX" // https://discordbots.org/api/docs#mybots // Pegando o key da api.
+  },
+  
+  votes: {
+		port: 5000, // Porta da dbl
+		password: "XXXXXXXXXXX" // Password do bot dbl
+	},
+  
   bot: {
     botname: "XXXX", // Nome do bot
     botlogolink:
