@@ -19,6 +19,7 @@ module.exports = {
         botlogolink: "XXXXXXX", // Logo do bot em link.
         botdescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", // Descrição do bot.
         creatorname: "XXXXX#0000", // Nome do criador com tag.
+        creatorid: "XXXXX", // Id do criador
         supportserverinvite: "XXXXXXXX", // Convite do server de suporte
         botinvitelink: "XXXXXXXXXXXXXXXXXX", // Convite do bot.
         prefix: "XX", // Prefixo do bot.
