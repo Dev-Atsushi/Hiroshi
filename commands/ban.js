@@ -56,7 +56,6 @@ const Base = require("../base/Command");
 		  }
   
       let reason = args.slice(1).join(' '); 
-      
       if(!reason) {
         reason = "Nenhuma razão fornecida."
       };
