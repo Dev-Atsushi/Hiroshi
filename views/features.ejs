@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/now-ui-kit.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+
+  <title><%= dependencias.botname %></title>
+  <link rel="icon"
+    href="<%= dependencias.botlogolink %>"
+    type="image/gif" sizes="16x16">
+
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="Stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="/js/loader"></script>
+
+</head>
+
+<body>
+
+  <div id="container">
+    <nav class="navbar navbar-expand-lg navbar bg-transparent">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars navbar-toggler"></i>
+        </button>
+        <a class="navbar-brand" href="#"><img src="<%= dependencias.botlogolink %>"
+            style="width: 40px; height: 40px; border-radius: 50%;"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/"
+                style="color: #cfd5dc; font-size: 1em; padding: 13px; transition: all .35s ease-in-out;"><i
+                  class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/features"
+                style="color: #cfd5dc; font-size: 1em; padding: 13px; transition: all .35s ease-in-out;"><i
+                  class="fas fa-newspaper"></i> Features</a>
+            </li>
+          </ul>
+          <div class="nav-item navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/about"
+                style="color: #cfd5dc; font-size: 1em; padding: 13px; transition: all .35s ease-in-out;"><i
+                  class="fas fa-award"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/commands"
+                style="color: #cfd5dc; font-size: 1em; padding: 13px; transition: all .35s ease-in-out;"><i
+                  class="fas fa-cogs"></i> Commands</a>
+            </li>
+
+              <a class="nav-link" aria-current="page" href="/login/dashboard">
+                  <button class="btn login-btn btn-outline-accent my-2 my-sm-0"
+                    style="font-size: 10px !important;font-family: poppins !important;">
+                    DASHBOARD
+                  </button>
+              </a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Cleared Bugs</h5>
+            <p class="card-text">Todos os bugs foram limpos</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Cooldown adicionado</h5>
+            <p class="card-text">Um cooldown foi adicionado no bot para ele não ter problema de flood</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Dashboard agora disponível</h5>
+            <p class="card-text">Acesse <a class="atsushi" href="/login">Aqui</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Novo server de suporte</h5>
+            <p class="card-text">Entre <a class="atsushi" href="<%= dependencias.botinvitelink %>">Aqui</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Novos comandos</h5>
+            <p class="card-text">Novos comandos <a href="/commands" class="atsushi">Aqui</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Site criado<h5>
+                <p class="card-text"><3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .row {
+        padding: 50px;
+      }
+
+      .card-title,
+      .card-text {
+        text-align: center;
+      }
+
+      .card {
+        height: 200px;
+        min-width: 600px;
+      }
+
+      @media (min-width:740px) and (max-width: 920px) {
+        .row {
+          padding: 0px;
+        }
+
+        .card {
+          height: 150px;
+          min-width: 400px;
+          margin-right: 0px;
+          margin-left: 0px;
+        }
+      }
+
+      @media (min-width:200px) and (max-width: 599px) {
+        .row {
+          padding: 0px;
+        }
+
+        .card {
+          height: 100px;
+          min-width: 300px;
+          right: 0px;
+          left: 0px;
+        }
+      }
+    </style>
+
+    <div class="footer">
+      <div class="bot-footer">
+        <img src="<%= dependencias.botlogolink %>" width="60" style="border-radius: 50%;"><br />
+        Copyright © <%= dependencias.creatorname %> - 2021
+      </div><br />
+      <div class="atsushi">created by <a href="https://github.com/Dev-Atsushi/"> Atsushi</a>
+    </div>
+  </div>
+</body>
+
+</html>
