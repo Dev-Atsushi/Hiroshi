@@ -21,9 +21,9 @@ const Base = require("../base/Command");
     let embed = new Discord.MessageEmbed()
       .setColor("BLACK")
       .setAuthor(message.client.config.bot.botname, message.client.user.displayAvatarURL())
-      .addField("<:rikka_no:777511967362646037> | `"+prefix+"anuncio`", '**Mande um anúncio para um canal em forma de embed.**')
-      .addField('<:rikka_yes:777512082669174814> | Como utilizar?', "`"+prefix+"anuncio` `<Canal>` `<Descrição do anúncio>`")
-      .addField('<:rikka_warn:777512813068419134> | Permissão?', '**`Gerenciar Canal`**', true)
+      .addField("`"+prefix+"anuncio`", '**Mande um anúncio para um canal em forma de embed.**')
+      .addField('Como utilizar?', "`"+prefix+"anuncio` `<Canal>` `<Descrição do anúncio>`")
+      .addField('Permissão?', '**`Gerenciar Canal`**', true)
       .setFooter("Comando requesitado por "+message.author.username+"",  message.author.displayAvatarURL({ dynamic: true }));
 
     const text = args.slice(1).join(' ');
@@ -43,7 +43,7 @@ const Base = require("../base/Command");
     let embedmention = new Discord.MessageEmbed()
     .setColor("BLACK")
     .setAuthor(message.client.config.bot.botname, message.client.user.displayAvatarURL())
-    .setDescription("<:mutado:774037272478744616>・Deseja notificar `@everyone` (Ping global)?\n \n Se deseja escreva: Sim.\n Se não deseja escreva: Não.")
+    .setDescription("Deseja notificar `@everyone` (Ping global)?\n \n Se deseja escreva: Sim.\n Se não deseja escreva: Não.")
     .setThumbnail(message.client.user.displayAvatarURL())
     .setFooter("Comando requesitado por "+message.author.username+"",  message.author.displayAvatarURL({ dynamic: true }));
             
@@ -70,7 +70,7 @@ const Base = require("../base/Command");
     collector.on("end", (collected, reason) => {
 
         const embed = new Discord.MessageEmbed()
-            .setTitle("<:rikka_unmute:777906839810605087>・Anúncio de "+message.guild.name+"")
+            .setTitle("Anúncio de "+message.guild.name+"")
             .setColor("BLACK")
             .setFooter("Comando requesitado por "+message.author.username+"",  message.author.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
