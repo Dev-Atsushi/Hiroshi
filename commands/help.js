@@ -18,7 +18,7 @@ const Base = require("../base/Command");
     let init = new Discord.MessageEmbed()
       .setColor(`BLACK`)
       .setTitle(`**<a:rikka_moon:777886530651947048>・${message.client.config.bot.botname} Help**`)
-      .setDescription("**Me chamo `"+message.client.config.bot.botname+"` um bot para Discord, com funções inovádoras e repletas de alegria para seu servidor**\n \n **<:rikka_link:777887753475194880>・Links**\n <:rikka_server:777874900923711488> | [Servidor de Suporte](https://discord.gg/rg9zkzZyda)\n <:rikka_link:777887753475194880> | [Website](https://hiroshi.tk) \n <:rikka_add:777896091840413778> | [Adicione-me](https://discord.com/api/oauth2/authorize?client_id=776955611212152872&permissions=8&redirect_uri=https%3A%2F%2Fhiroshi.tk&scope=bot)\n \n **<:rikkahelppasta:769605039151906847>・Comandos**\n <:rikkahelpum:769601818061701196> | Moderação\n <:rikkahelpdois:769601901251526737> | Útilidade")
+      .setDescription("**Me chamo `"+message.client.config.bot.botname+"` um bot para Discord, com funções inovádoras e repletas de alegria para seu servidor**\n \n **<:rikka_link:777887753475194880>・Links**\n <:rikka_server:777874900923711488> | [Servidor de Suporte]("+message.client.config.bot.supportserverinvite+")\n <:rikka_link:777887753475194880> | [Website](https://"+message.client.config.url+") \n <:rikka_add:777896091840413778> | [Adicione-me]("+message.client.config.bot.botinvitelink+")\n \n **<:rikkahelppasta:769605039151906847>・Comandos**\n <:rikkahelpum:769601818061701196> | Moderação\n <:rikkahelpdois:769601901251526737> | Útilidade")
       .setAuthor(message.client.config.bot.botname, message.client.user.displayAvatarURL())
       .setImage("https://cdn.discordapp.com/attachments/743826730514514030/803063076110204958/Screenshot_20210124-214545.png")
       .setFooter(`Comando requisitado por: ${message.author.username}`, message.author.displayAvatarURL({ dynamic: true })) 
@@ -40,7 +40,7 @@ const Base = require("../base/Command");
         const comandosmod = await message.client.commands.array().filter(ch => ch.help.category === 'Mod');
         let texto = ''
         let embed = new Discord.MessageEmbed()
-          embed.setTitle("<:rikka_mod:777514639058796585>・Comandos de Moderação")
+          embed.setTitle("Comandos de Moderação")
           embed.setThumbnail(message.client.user.displayAvatarURL())
           embed.setTimestamp()
           embed.setColor("8be9fd")
@@ -59,7 +59,7 @@ const Base = require("../base/Command");
         const comandosutil = await message.client.commands.array().filter(ch => ch.help.category === 'Util');
         let texto = ''
         let embed = new Discord.MessageEmbed()
-          .setTitle("<a:rikka_sparkles:777878055762526239>・Comandos de Útilidade")
+          .setTitle("Comandos de Útilidade")
           .setDescription('`Help`')
           .setThumbnail(message.client.user.displayAvatarURL())
           .setTimestamp()
