@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/now-ui-kit.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet">
+  
+  <title><%= dependencias.botname %></title>
+  <link rel="icon"
+    href="<%= dependencias.botlogolink %>"
+    type="image/gif" sizes="16x16">
+
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="Stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="/js/loader"></script>
+
+</head>
+
+  <div id="container">
+    <nav class="navbar navbar-expand-lg navbar bg-transparent">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars navbar-toggler"></i>
+        </button>
+        <a class="navbar-brand" href="#"><img src="<%= dependencias.botlogolink %>"
+            style="width: 40px; height: 40px; border-radius: 50%;"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/"
+                style="color: #cfd5dc; font-size: 1em; padding: 13px; transition: all .35s ease-in-out;"><i
+                  class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/features"
+                style="color: #cfd5dc; font-size: 1em; padding: 13px; transition: all .35s ease-in-out;"><i
+                  class="fas fa-newspaper"></i> Features</a>
+            </li>
+          </ul>
+          <div class="nav-item navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/about"
+                style="color: #cfd5dc; font-size: 1em; padding: 13px; transition: all .35s ease-in-out;"><i
+                  class="fas fa-award"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/commands"
+                style="color: #cfd5dc; font-size: 1em; padding: 13px; transition: all .35s ease-in-out;"><i
+                  class="fas fa-cogs"></i> Commands</a>
+            </li>
+
+              <a class="nav-link" aria-current="page" href="/login/dashboard">
+                  <button class="btn login-btn btn-outline-accent my-2 my-sm-0"
+                    style="font-size: 10px !important;font-family: poppins !important;">
+                    DASHBOARD
+                  </button>
+              </a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="about">
+      <img src="<%= dependencias.botlogolink %>" width="150" height="150" style="border-radius: 15px;">
+      <h1 class="bot__name"><span><%= dependencias.botname %></span></h1>
+      <br>
+      <p class="bot__desc"><%= dependencias.botdescription %></p>
+      <center>
+        <span class="tag">Prefix: <%= dependencias.prefix %></span>
+        <span class="tagtwo">Language: <%= dependencias.language %></span>
+      </center>
+      <br>
+      <center>
+        <a class="btn btn-primary btn-lg" href="<%= dependencias.supportserverinvite %>" target="_blank"
+          role="button">Support Server</a>
+        <a class="btn btn-secondary btn-lg" href="<%= dependencias.botinvitelink %>" target="_blank" role="button">Add
+          to server</a>
+      </center>
+    </div>
+
+    <style>
+      @media (min-width: 769px) {
+        .about {
+          align-items: flex-start;
+          text-align: left;
+          flex-flow: row;
+        }
+      }
+
+      .about {
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-bottom: 1rem;
+        height: 800px;
+      }
+
+      @media (min-width: 769px) {
+        .about img {
+          margin: 0 20px 0 0;
+        }
+      }
+
+      .about img {
+        background-color: transparent;
+        margin: 0 0 10px 0;
+      }
+
+      @media (min-width: 769px) {
+        .about h1 {
+          margin: 0 20px 0 0;
+        }
+      }
+
+      .about h1 {
+        display: flex;
+        justify-content: center;
+      }
+
+      .about p {
+        word-break: break-word;
+        font-weight: 500;
+        max-width: 42rem;
+        max-width: 600px;
+      }
+
+      .about h1,
+      p {
+        color: #fff;
+      }
+
+      .about .tag,
+      .tagtwo {
+        display: inline-block;
+        background: transparent;
+        padding: .5rem 1rem;
+        border-radius: 50px;
+        border: 1px solid #000;
+        color: #fff;
+      }
+    </style>
+
+    <div class="footer">
+      <div class="bot-footer">
+        <img src="<%= dependencias.botlogolink %>" width="60" style="border-radius: 50%;"><br />
+        Copyright © <%= dependencias.creatorname %> - 2021
+      </div><br />
+      <div class="atsushi">created by <a href="https://github.com/Dev-Atsushi/"> Atsushi</a>
+    </div>
+</body>
+
+</html>
