@@ -1,4 +1,4 @@
-<img width="150" height="150" align="left" style="float: left; margin: 0 10px 0 0;" alt="Atlanta" src="https://cdn.discordapp.com/attachments/777895745000439838/806505117767172126/avatar.png" />  
+<img width="150" height="150" align="left" style="float: left; margin: 0 10px 0 0;" src="https://cdn.discordapp.com/attachments/777895745000439838/806505117767172126/avatar.png" />  
 
 <h1>Hiroshi</h1>
 
