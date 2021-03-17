@@ -3,8 +3,8 @@ const { APIMessage, Message, Discord } = require("discord.js"),
   Hiroshi = require("./base/Hiroshi.js"),
   client = new Hiroshi();
    
-client.loadEvents('./events')
-client.loadCommands('./commands')
+client.loadEvents('./events');
+client.loadCommands('./commands');
 
 const firebase = require("firebase"),
   Sentry = require("@sentry/node"),
