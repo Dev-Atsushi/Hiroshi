@@ -20,10 +20,9 @@ const init = async () => {
     });
 };
 
-client.login(client.config.token)
+client.login(client.config.token);
 init();
 
-// if there is an unhandledRejection, log them
 process.on("unhandledRejection", (err) => {
 	console.error(err);
 });
